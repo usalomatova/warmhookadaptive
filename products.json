@@ -1,0 +1,63 @@
+{
+  "toy": [
+    {
+      "img": "img/bbkit.jpg",
+      "name": "тост с маслом в виде кита",
+      "price": 1100
+    },
+    {
+      "img": "img/orlyata.jpg",
+      "name": "орлята",
+      "price": 800
+    },
+    {
+      "img": "img/utyatoma.jpg",
+      "name": "утёнок в шляпе с томатом",
+      "price": 950
+    },
+    {
+      "img": "img/morzh.jpg",
+      "name": "тюлень",
+      "price": 900
+    }
+  ],
+  "keychains": [
+    {
+      "img": "img/arbuz.jpg",
+      "name": "долька арбуза",
+      "price": 750
+    },
+    {
+      "img": "img/dlinniyriba.jpg",
+      "name": "длиннорыбка",
+      "price": 650
+    },
+    {
+      "img": "img/vishenki.jpg",
+      "name": "вишенки",
+      "price": 800
+    },
+    {
+      "img": "img/kapi.jpg",
+      "name": "капибара",
+      "price": 550
+    },
+    {
+      "img": "img/zvezdi.jpg",
+      "name": "звездочки",
+      "price": 450
+    }
+  ],
+  "bookmarks": [
+    {
+      "img": "img/greenlist.jpg",
+      "name": "четырёхлистный клевер",
+      "price": 300
+    },
+    {
+      "img": "img/negreen.jpg",
+      "name": "росток",
+      "price": 300
+    }
+  ]
+}

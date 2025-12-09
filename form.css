@@ -1,0 +1,299 @@
+body { 
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: rgb(254, 235, 212);
+  text-align: center;
+  margin: 0;
+}
+
+.first_title {
+  font-size: 33px;
+}
+
+.second_title {
+  font-size: 30px;
+  color: #8B4513;
+  margin-bottom: 5px;
+}
+
+.headup {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.headdown {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.zagbg {
+  height: fit-content;
+  width: fit-content;
+  border-radius: 8px;
+}
+
+h3 {
+  font-size: 27px;
+  color: #000;
+}
+
+p {
+  font-size: 15px;
+  color: #000;
+  margin: 10px 0; /* ровные вертикальные отступы */
+  line-height: 1.3;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.mul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.navi {
+  font-size: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 1px;
+  box-shadow: 2px 2px 10px #000;
+  margin: 30px;
+}
+
+.navi .mul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navi .mul .mlist {
+  list-style: none;
+  padding: 15px 20px;
+  margin: 5px 15px;
+}
+
+.navi .mul .mlist a {
+  text-decoration: none;
+  color: #000;
+}
+
+.here {
+  font-weight: bold;
+}
+
+.maincont {
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* --------- БАЗОВЫЕ СТИЛИ ДЛЯ ПОЛЕЙ ФОРМЫ --------- */
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+select,
+textarea {
+  font-family: inherit;
+  font-size: 15px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #8B4513;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Аккуратная ширина */
+input[type="text"],
+input[type="number"],
+input[type="password"],
+select {
+  min-width: 220px;
+  max-width: 320px;
+}
+
+textarea {
+  min-width: 260px;
+  max-width: 500px;
+  width: 60%;
+  resize: vertical;
+}
+
+/* --------- КНОПКИ --------- */
+
+/* Кнопка "Обновить" — спокойная */
+input[type="reset"] {
+  font-family: inherit;
+  font-size: 15px;
+  padding: 8px 20px;
+  margin: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #c8a98a;
+  color: #000;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* Главная кнопка "Отправить" */
+input[type="submit"] {
+  font-family: inherit;
+  font-size: 17px;
+  padding: 10px 26px;
+  margin: 8px 12px;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  background-color: #8B4513;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.45);
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+input[type="reset"]:hover {
+  background-color: #b89576;
+  transform: translateY(-1px);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+input[type="submit"]:hover {
+  background-color: #6d360f;
+  transform: translateY(-2px);
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6);
+}
+
+/* --------- ФОКУС ДЛЯ ВСЕХ ЭЛЕМЕНТОВ ФОРМЫ --------- */
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus {
+  outline: none;
+  border-color: #D2691E;
+  box-shadow: 0 0 0 2px rgba(210, 105, 30, 0.3);
+}
+
+/* ---------------- АДАПТИВ ---------------- */
+
+@media (max-width: 830px) {
+  .headup { margin-top: 20px; }
+  .headdown { padding-left: 20px; padding-right: 20px; }
+  .navi { margin-bottom: 0; }
+  .maincont { margin-left: 55px; margin-right: 10px; }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="password"],
+  select {
+    max-width: 260px;
+  }
+
+  textarea {
+    width: 70%;
+    max-width: 420px;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    font-size: 14px;
+    padding: 7px 18px;
+  }
+}
+
+@media (max-width: 740px) {
+  .first_title { font-size: 27px; margin-bottom: 14px; }
+  .second_title { font-size: 25px; margin-top: 14px; }
+  h3 { font-size: 21px; }
+  p { font-size: 12px; }
+
+  .maincont { margin-left: 30px; }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="password"],
+  select {
+    width: 75%;
+    font-size: 13px;
+  }
+
+  textarea {
+    width: 85%;
+    font-size: 13px;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    font-size: 13px;
+    padding: 6px 16px;
+  }
+}
+
+@media (max-width: 530px) {
+  .first_title { font-size: 23px; }
+  .second_title { font-size: 20px; }
+  h3 { font-size: 17px; }
+  p { font-size: 10px; }
+
+  .maincont { margin-left: 20px; }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="password"],
+  select {
+    width: 90%;
+    font-size: 11px;
+  }
+
+  textarea {
+    width: 95%;
+    font-size: 11px;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+}
+
+@media (max-width: 325px) {
+  .first_title { font-size: 15px; }
+  .second_title { font-size: 12px; }
+  h3 { font-size: 10px; }
+  p { font-size: 6px; }
+
+  .maincont { margin-left: 0; }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="password"],
+  select {
+    width: 95%;
+    font-size: 9px;
+  }
+
+  textarea {
+    width: 95%;
+    font-size: 9px;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 16px;
+  }
+}
